@@ -1,0 +1,76 @@
+/*Estilos generales*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+  /*Color palette*/
+  --black: #0d1326;
+  --deepBlue: #101630;
+  --white: #fff;
+  --gray: #feffff;
+  --skyBlue: #528dd9;
+  --sky: #53b5dd;
+  --blueViolet: #403bbf;
+  --lightBlueViolet: #4b5cbf;
+
+  /*Font sizes*/
+  --titulo1: 32px;
+  --titulo2: 28px;
+  --titulo3: 20px;
+  --titulo4: 16px;
+  --normal: 16px;
+  --small: 14px;
+  --smaller: 12px;
+}
+
+/*-----------------------------------*/
+
+/*Estilos para el header*/
+
+body{
+    background-color: var(--deepBlue);
+}
+
+.header{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px ;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__logo{
+}
+
+.header__logo-link{
+    color: var(--sky);
+    font-size: var(--titulo3);
+    font-weight: 700;
+}
+
+
+
+
+/* media queries */

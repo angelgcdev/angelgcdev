@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angel Gutierrez</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Chonburi&family=Open+Sans:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -21,7 +22,7 @@
         <a class="header__logo-link" href="#">LA</a>
       </div>
 
-      <nav class="header__nav">
+      <nav class="header__nav inactive">
         <li class="header__list">
           <a class="header__link" href="#">Inicio</a>
         </li>
@@ -39,15 +40,23 @@
         </li>
       </nav>
 
-      <div class="menuIcon">
-        <a class="menuIcon__boton" href="">
-          <img src="./assets/icons/burger.svg" alt="icono Menu" />
-        </a>
-      </div>
+      <button class="botonMenu">
+        <img src="./assets/icons/burger.svg" alt="icono Menu" />
+      </button>
     </header>
 
     <main class="main">
-      <section class="."></section>
+      <section class="main__home">
+        <p class="main__home-title">
+          Descubre mi portafolio como desarrollador web
+        </p>
+        <p class="main__home-title2">
+          CREANDO EXPERIENCIAS DIGITALES<span>.</span>
+        </p>
+        <button class="botonCV gradient--blueviolet">
+          <a href="#">Descargar CV</a>
+        </button>
+      </section>
     </main>
 
     <footer></footer>

@@ -45,6 +45,17 @@ li {
 }
 
 /*-----------------------------------*/
+/*Boton*/
+.button {
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--white);
+  font-size: var(--small);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 /*Degradado*/
 .gradient--blueviolet {
   background: linear-gradient(
@@ -100,9 +111,9 @@ body {
   z-index: 1000;
 }
 
-/*Styles about-me*/
+/*Styles home*/
 
-.main__home {
+.home {
   width: 100vw;
   height: 70vh;
   display: grid;
@@ -115,16 +126,17 @@ body {
     ".";
 }
 
-.main__home-title {
+.home-title {
   color: var(--gray);
   font-size: var(--titulo3);
   font-weight: 700;
   margin-left: 2rem;
   grid-area: titulo1;
   margin-bottom: 1.6rem;
+  padding-right: 1.6rem;
 }
 
-.main__home-title2 {
+.home-title2 {
   color: var(--white);
   font-family: "Chonburi", cursive;
   margin-left: 2rem;
@@ -133,23 +145,83 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.botonCV {
+.home__button {
+  display: inline-block;
   margin-left: 2rem;
   grid-area: boton;
   margin-bottom: 1.6rem;
   width: 14rem;
   height: 5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
 }
 
-.botonCV a {
-  color: var(--white);
-  font-size: var(--small);
-  font-weight: 600;
-  letter-spacing: 1px;
+
+/*Styles aboutme*/
+
+.aboutme{
+  width: 100vw;
+  height: 100vh;
 }
+
+.aboutme__photo-container{
+  border: 5px solid var(--sky);
+  width: 70%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-bottom: 1.6rem;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.418);
+
+}
+
+
+.aboutme__photo{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.418);
+}
+
+.aboutme__title,
+.aboutme__title1,
+.aboutme__text,
+.aboutme__button{
+  margin: 0 2rem;
+}
+
+.aboutme__title{
+  color: var(--white);
+  font-size: var(--titulo4);
+  font-weight: normal;
+}
+
+.aboutme__title1{
+  color: var(--sky);
+  font-size: var(--titulo3);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.aboutme__text{
+  color: var(--white);
+  margin-bottom: 1.6rem;
+  font-size: var(--normal);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.aboutme__button{
+  width: auto;
+  height: 5rem;
+  padding: 0 1.6rem;
+}
+
 
 /* media queries */
 

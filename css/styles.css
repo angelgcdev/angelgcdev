@@ -28,6 +28,7 @@ li {
   --black: #0d1326;
   --deepBlue: #101630;
   --white: #fdfdfd;
+  --whitegray: #adb2c5;
   --gray: #868b97;
   --skyBlue: #528dd9;
   --sky: #53b5dd;
@@ -44,7 +45,9 @@ li {
   --smaller: 12px;
 }
 
-/*-----------------------------------*/
+/*########################################################*/
+
+/*ESTILOS REUTILIZABLES*/
 /*Boton*/
 .button {
   border: none;
@@ -66,6 +69,16 @@ li {
     var(--blueViolet)
   );
 }
+
+/*Borde de las imagenes*/
+.image-border {
+  border: 5px solid var(--sky);
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.418);
+}
+
+/*########################################################*/
 
 /*Clase inactive para ocultar elementos*/
 .inactive {
@@ -115,7 +128,7 @@ body {
 
 .home {
   width: 100vw;
-  height: 70vh;
+  height: 600px;
   display: grid;
   grid-template-rows: 1fr auto auto auto 1fr;
   grid-template-areas:
@@ -154,29 +167,23 @@ body {
   height: 5rem;
 }
 
-
 /*Styles aboutme*/
 
-.aboutme{
+.aboutme {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 10rem;
 }
 
-.aboutme__photo-container{
-  border: 5px solid var(--sky);
+.aboutme__photo-container {
   width: 70%;
   height: 450px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
   margin-bottom: 1.6rem;
-  position: relative;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.418);
-
 }
 
-
-.aboutme__photo{
+.aboutme__photo {
   display: block;
   width: 100%;
   height: 100%;
@@ -191,37 +198,107 @@ body {
 .aboutme__title,
 .aboutme__title1,
 .aboutme__text,
-.aboutme__button{
+.aboutme__button {
   margin: 0 2rem;
 }
 
-.aboutme__title{
+.aboutme__title {
   color: var(--white);
   font-size: var(--titulo4);
   font-weight: normal;
 }
 
-.aboutme__title1{
+.aboutme__title1 {
   color: var(--sky);
   font-size: var(--titulo3);
   font-weight: 700;
   margin-bottom: 1.6rem;
 }
 
-.aboutme__text{
-  color: var(--white);
+.aboutme__text {
+  color: var(--whitegray);
   margin-bottom: 1.6rem;
   font-size: var(--normal);
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
 
-.aboutme__button{
+.aboutme__button {
   width: auto;
   height: 5rem;
   padding: 0 1.6rem;
 }
 
+/*Styles porfolio*/
+
+.portfolio {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
+.portfolio__title {
+  color: var(--white);
+  font-size: var(--titulo2);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portolio__proyect{
+  margin-bottom: 3.2rem;
+}
+
+.proyect__title {
+  color: var(--sky);
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  font-weight: normal;
+  font-size: var(--titulo3);
+}
+
+.proyect__subtitle {
+  color: var(--white);
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  font-size: var(--titulo3);
+  font-weight: 600;
+}
+
+.proyect__description {
+  color: var(--whitegray);
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.proyect__link{
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  color: var(--white);
+}
+
+.proyect__image-container{
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proyect__image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  border-radius: 5px;
+}
 
 /* media queries */
 

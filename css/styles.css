@@ -80,16 +80,10 @@ li {
 
 /*########################################################*/
 
-/*Clase inactive para ocultar elementos*/
-.inactive {
-  display: none;
-}
-
 /*Estilos para el header*/
 
 body {
   background-color: var(--deepBlue);
-  position: relative;
 }
 
 .header {
@@ -99,23 +93,39 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+  position: relative;
 }
 
 .header__logo-link {
   color: var(--sky);
   font-size: var(--titulo2);
   font-weight: 700;
-  font-family: 'Chonburi', cursive;
+  font-family: "Chonburi", cursive;
 }
 
 .header__nav {
-  background-color: var(--skyBlue);
-  position: sticky;
-  top: 100px;
+  background-image: linear-gradient(rgba(83, 182, 221, 0.9), rgb(75, 92, 191));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__list {
+  padding: 3.2rem;
 }
 
 .header__link {
   color: var(--white);
+  font-size: var(--titulo3);
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .botonMenu {
@@ -123,6 +133,8 @@ body {
   border: none;
   cursor: pointer;
   z-index: 1000;
+  position: fixed;
+  right:1.6rem;
 }
 
 /*Styles home*/
@@ -245,7 +257,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.portolio__proyect{
+.portolio__proyect {
   margin-bottom: 3.2rem;
 }
 
@@ -276,7 +288,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.proyect__link{
+.proyect__link {
   display: inline-block;
   margin-bottom: 1.6rem;
   margin-left: 1.6rem;
@@ -284,14 +296,14 @@ body {
   color: var(--white);
 }
 
-.proyect__image-container{
+.proyect__image-container {
   width: 300px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.proyect__image{
+.proyect__image {
   display: block;
   width: 100%;
   height: 100%;
@@ -301,16 +313,15 @@ body {
   border-radius: 5px;
 }
 
-
 /*Styles my skills*/
 
-.skills{
+.skills {
   width: 100vw;
   height: auto;
   margin-bottom: 10vh;
 }
 
-.skills__title{
+.skills__title {
   color: var(--white);
   text-align: center;
   margin-bottom: 4rem;
@@ -318,7 +329,7 @@ body {
   letter-spacing: 1px;
 }
 
-.skills__container{
+.skills__container {
   margin-right: 10vw;
   margin-left: 10vw;
   display: flex;
@@ -328,19 +339,19 @@ body {
   gap: 1.6rem;
 }
 
-.skill__image-container{
+.skill__image-container {
   width: 100px;
   background-color: rgba(255, 255, 255, 0.144);
   border-radius: 5px;
 }
 
-.skill__image{
+.skill__image {
   display: block;
   width: 100%;
   padding-bottom: 1.6rem;
 }
 
-.skill__title{
+.skill__title {
   color: var(--white);
   text-align: center;
   padding-bottom: 1.6rem;
@@ -355,7 +366,15 @@ body {
     display: none;
   }
 
-  .header__nav {
-    display: block;
-  }
 }
+
+
+
+
+
+/*###########################################################*/
+/*Clase inactive para ocultar elementos*/
+.inactive {
+  display: none;
+}
+/*###########################################################*/

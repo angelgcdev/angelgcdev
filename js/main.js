@@ -5,3 +5,5 @@ BotonMenu.addEventListener("click", () => {
     console.log('click');
     header__nav.classList.toggle("inactive");
 });
+
+console.log('borrame');

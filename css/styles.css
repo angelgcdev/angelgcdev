@@ -512,3 +512,19 @@ body {
   display: none;
 }
 /*###########################################################*/
+
+/*-----------------------------------*/
+/*BUTTON FEEDBACK*/
+.button-feedback {
+  display: inline-block;
+  transition: box-shadow 0.3s;
+  transition: transform 0.3s;
+}
+
+.button-feedback:active {
+  color: var(--whitegray);
+  text-shadow: 1px 1px 10px var(--blueViolet);
+  transform: translateX(5px);
+}
+
+/*-----------------------------------*/

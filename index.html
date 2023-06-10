@@ -24,19 +24,25 @@
 
       <nav class="header__nav inactive">
         <li class="header__list">
-          <a class="header__link button-feedback" href="#">Inicio</a>
+          <a class="header__link button-feedback" href="#home">Inicio</a>
         </li>
         <li class="header__list">
-          <a class="header__link button-feedback" href="#">Acerca de mi</a>
+          <a class="header__link button-feedback" href="#aboutme"
+            >Acerca de mi</a
+          >
         </li>
         <li class="header__list">
-          <a class="header__link button-feedback" href="#">Portafolio</a>
+          <a class="header__link button-feedback" href="#portfolio"
+            >Portafolio</a
+          >
         </li>
         <li class="header__list">
-          <a class="header__link button-feedback" href="#">Mis habilidades</a>
+          <a class="header__link button-feedback" href="#skills"
+            >Mis habilidades</a
+          >
         </li>
         <li class="header__list">
-          <a class="header__link button-feedback" href="#">Contáctame</a>
+          <a class="header__link button-feedback" href="#contact">Contáctame</a>
         </li>
       </nav>
 
@@ -46,19 +52,22 @@
     </header>
 
     <main class="main">
-      <section class="home">
+      <section class="home" id="home">
         <h2 class="home-title">
           Descubre mi portafolio como desarrollador web
         </h2>
         <h2 class="home-title2">
           CREANDO EXPERIENCIAS DIGITALES<span>.</span>
         </h2>
-        <button class="home__button button gradient--blueviolet button-feedback">
+        <button
+          class="home__button button gradient--blueviolet button-feedback"
+        >
           Ver Proyectos
         </button>
       </section>
 
-      <section class="aboutme">
+      <section class="aboutme" id="aboutme">
+        <h2 class="aboutme__titlep">Acerca de mi</h2>
         <div class="aboutme__container">
           <div class="aboutme__photo-container image-border">
             <img
@@ -86,14 +95,16 @@
               para cualquier oportunidad que se presente.
             </p>
             <p class="aboutme__text">¡Gracias por su tiempo y consideración!</p>
-            <button class="aboutme__button button gradient--blueviolet button-feedback">
+            <button
+              class="aboutme__button button gradient--blueviolet button-feedback"
+            >
               Contáctame
             </button>
           </div>
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title">Portafolio</h2>
 
         <article class="portolio__proyect">
@@ -201,7 +212,7 @@
         </article>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="skills__title">Mis Habilidades</h2>
 
         <div class="skills__container">
@@ -239,7 +250,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__background gradient--blueviolet-left-transparent">
           <h2 class="contact__title">Contáctame</h2>
 
@@ -247,7 +258,7 @@
 
           <div class="contacts__container">
             <div class="contact__container">
-              <div class="contact__icon-container gradient--blueviolet-bottom">
+              <div class="contact__icon-container">
                 <img
                   class="contact__icon"
                   src="./assets/icons/phone.svg"
@@ -255,7 +266,7 @@
                 />
               </div>
 
-              <p class="contact__info">+591 74903382</p>
+              <p class="contact__info">🇧🇴 +591 74903382</p>
             </div>
 
             <div class="contact__container">
@@ -267,7 +278,12 @@
                 />
               </div>
 
-              <a class="contact__info" href="#"> angelgcdev@gmail.com </a>
+              <a
+                class="contact__info button-feedback"
+                href="mailto:angelgcdev@gmail.com"
+              >
+                angelgcdev@gmail.com
+              </a>
             </div>
           </div>
         </div>
@@ -276,14 +292,17 @@
 
     <footer class="footer">
       <div class="footer__background gradient--blueviolet-left-transparent">
-        
         <div class="footer__line"></div>
 
         <div class="footer__container">
           <p class="footer__info">Desarrollado por Angel - 2023</p>
 
           <div class="footer__socialMedia">
-            <a class="footer__socialMedia-link button-feedback" href="#">
+            <a
+              class="footer__socialMedia-link button-feedback"
+              href="https://wa.me/71910359"
+              target="_blank"
+            >
               <img
                 class="footer__socialMedia-image"
                 src="./assets/images/WhatsApp.png"
@@ -291,7 +310,11 @@
               />
             </a>
 
-            <a class="footer__socialMedia-link button-feedback" href="#">
+            <a
+              class="footer__socialMedia-link button-feedback"
+              href="https://www.facebook.com/profile.php?id=100093205989441"
+              target="_blank"
+            >
               <img
                 class="footer__socialMedia-image"
                 src="./assets/images/facebook.png"
@@ -299,7 +322,11 @@
               />
             </a>
 
-            <a class="footer__socialMedia-link button-feedback" href="#">
+            <a
+              class="footer__socialMedia-link button-feedback"
+              href="https://github.com/angelgcdev"
+              target="_blank"
+            >
               <img
                 class="footer__socialMedia-image"
                 src="./assets/images/github.png"
@@ -307,7 +334,6 @@
               />
             </a>
           </div>
-
         </div>
       </div>
     </footer>

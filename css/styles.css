@@ -59,7 +59,7 @@ li {
   letter-spacing: 1px;
 }
 
-/*Degradado*/
+/*Degradados*/
 .gradient--blueviolet {
   background: linear-gradient(
     to right,
@@ -89,6 +89,7 @@ li {
     var(--blueViolet)
   );
 }
+
 
 /*Borde de las imagenes*/
 .image-border {
@@ -161,9 +162,9 @@ body {
 
 .home {
   width: 100vw;
-  height: 600px;
+  height: 450px;
   display: grid;
-  grid-template-rows: 1fr auto auto auto 1fr;
+  grid-template-rows: 5rem auto auto auto 5rem;
   grid-template-areas:
     "."
     "titulo1"
@@ -206,6 +207,15 @@ body {
   width: 100vw;
   height: auto;
   margin-bottom: 10rem;
+}
+
+.aboutme__titlep{
+  color: var(--white);
+  font-size: var(--titulo2);
+  font-weight: 700;
+  padding-bottom: 4rem;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .aboutme__photo-container {

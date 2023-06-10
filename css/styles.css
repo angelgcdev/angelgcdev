@@ -70,6 +70,26 @@ li {
   );
 }
 
+.gradient--blueviolet-left-transparent {
+  background: linear-gradient(
+    to left,
+    rgba(83, 182, 221, 0.8),
+    rgba(82, 141, 217, 0.8),
+    rgba(75, 92, 191, 0.8),
+    rgba(63, 59, 191, 0.8)
+  );
+}
+
+.gradient--blueviolet-bottom{
+  background: linear-gradient(
+    to bottom,
+    var(--sky),
+    var(--skyBlue),
+    var(--lightBlueViolet),
+    var(--blueViolet)
+  );
+}
+
 /*Borde de las imagenes*/
 .image-border {
   border: 5px solid var(--sky);
@@ -134,7 +154,7 @@ body {
   cursor: pointer;
   z-index: 1000;
   position: fixed;
-  right:1.6rem;
+  right: 1.6rem;
 }
 
 /*Styles home*/
@@ -359,18 +379,83 @@ body {
   font-weight: 600;
 }
 
+
+/*Styles contact*/
+
+.contact{
+  width: 100vw;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.contact__background{
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+
+.contact__title{
+  color: var(--white);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3.2rem;
+  font-size: var(--titulo2);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact__subtitle{
+  color: var(--white);
+  padding-left: 2rem;
+  padding-bottom: 1.6rem;
+  font-size: var(--titulo3);
+  font-weight: 500;
+}
+
+.contacts__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left:2rem ;
+}
+
+.contact__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 1.6rem;
+}
+
+.contact__icon-container{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(13, 19, 38, 0.555);
+}
+
+.contact__icon{
+  width: 50%;
+}
+
+.contact__info{
+  color: var(--white);
+  font-size: var(--normal);
+  font-weight: normal;
+}
+
+
+
 /* media queries */
 
 @media (min-width: 768px) {
   .botonMenu {
     display: none;
   }
-
 }
-
-
-
-
 
 /*###########################################################*/
 /*Clase inactive para ocultar elementos*/

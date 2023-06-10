@@ -80,7 +80,7 @@ li {
   );
 }
 
-.gradient--blueviolet-bottom{
+.gradient--blueviolet-bottom {
   background: linear-gradient(
     to bottom,
     var(--sky),
@@ -379,21 +379,21 @@ body {
   font-weight: 600;
 }
 
-
 /*Styles contact*/
 
-.contact{
+.contact {
   width: 100vw;
   height: auto;
-  margin-bottom: 4rem;
 }
 
-.contact__background{
+.contact__background {
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
+  padding-bottom: 4rem;
+  padding: 0 10vw;
 }
 
-.contact__title{
+.contact__title {
   color: var(--white);
   text-align: center;
   padding-top: 2rem;
@@ -403,31 +403,30 @@ body {
   letter-spacing: 1px;
 }
 
-.contact__subtitle{
+.contact__subtitle {
   color: var(--white);
-  padding-left: 2rem;
   padding-bottom: 1.6rem;
   font-size: var(--titulo3);
   font-weight: 500;
 }
 
-.contacts__container{
+.contacts__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left:2rem ;
+  padding-bottom: 3.2rem;
 }
 
-.contact__container{
+.contact__container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
-  margin: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
-.contact__icon-container{
+.contact__icon-container {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -437,17 +436,67 @@ body {
   box-shadow: 1px 1px 10px rgba(13, 19, 38, 0.555);
 }
 
-.contact__icon{
+.contact__icon {
   width: 50%;
 }
 
-.contact__info{
+.contact__info {
   color: var(--white);
   font-size: var(--normal);
   font-weight: normal;
 }
 
+/*Styles footer*/
 
+.footer {
+  width: 100vw;
+  height: auto;
+}
+
+.footer__background {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.footer__line {
+  width: 80vw;
+  border-top: 1px solid var(--whitegray);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3.2rem;
+  position: absolute;
+  top: -14px;
+  left: 39px;
+}
+
+.footer__container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+.footer__info {
+  color: var(--white);
+  font-size: var(--smaller);
+  font-size: 300;
+}
+
+.footer__socialMedia {
+}
+
+.footer__socialMedia-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__socialMedia-image {
+  width: 100%;
+}
 
 /* media queries */
 

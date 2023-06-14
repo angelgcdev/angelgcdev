@@ -1,29 +1,39 @@
-const header__nav = document.querySelector(".header__nav");
-const BotonMenu = document.querySelector(".botonMenu");
-const botonesNav = document.querySelectorAll(".header__link");
-const homeButton = document.querySelector(".home__button");
-const aboutmeButton= document.querySelector('.aboutme__button');
+const botonMenu = document.querySelector(".botonMenu");
+const headerNav = document.querySelector(".header__nav");
+const navbarButtons = document.querySelectorAll(".header__link");
 
-/*boton menu hamburguesa*/
-BotonMenu.addEventListener("click", () => {
-  header__nav.classList.toggle("inactive");
-});
+/**muestra u oculta botones */
+const clickHandler = () => {
+  headerNav.classList.toggle("inactive");
+};
 
-/*Botones de la barra de navegación*/
-botonesNav.forEach((boton) => {
-  boton.addEventListener("click", () => {
-    header__nav.classList.toggle("inactive");
-  });
-});
+function mostrarOcultarBoton() {
+  /**Obtener el tamaño de la pantalla */
+  let ancho =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
 
-/*Boton de la seccion home */
-homeButton.addEventListener("click", () => {
-  const sectionPortfolio = document.querySelector("#portfolio");
-  sectionPortfolio.scrollIntoView({ behavior: "smooth" });
-});
+  if (ancho >= 768) {
+    headerNav.classList.remove("inactive");
+    navbarButtons.forEach((boton) => {
+      boton.removeEventListener("click", clickHandler);
+    });
+  } else {
+    headerNav.classList.add("inactive");
 
-/*Boton de la seccion aboutme */
-aboutmeButton.addEventListener('click',()=>{
-  const secctionAboutme=document.querySelector('#contact');
-  secctionAboutme.scrollIntoView({behavior: 'smooth'});
-});
+    /*Mostrar y ocultar el menu navbar */
+    botonMenu.addEventListener("click", clickHandler);
+
+    /**ocultar los botones navbar */
+    navbarButtons.forEach((boton) => {
+      boton.addEventListener("click", clickHandler);
+    });
+  }
+}
+
+//Ejecuta la función cuando termina de cargar la página
+window.onload = mostrarOcultarBoton;
+
+//Registra la funcion como un controlador del evento resize se ejecuta 
+window.addEventListener("resize", mostrarOcultarBoton);

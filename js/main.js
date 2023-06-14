@@ -1,6 +1,20 @@
 const botonMenu = document.querySelector(".botonMenu");
+const homeButton = document.querySelector(".home__button");
+const aboutmeButton = document.querySelector(".aboutme__button");
+
 const headerNav = document.querySelector(".header__nav");
 const navbarButtons = document.querySelectorAll(".header__link");
+const portfolio = document.querySelector("#portfolio");
+const contact = document.querySelector("#contact");
+
+/**Desplazamiento suave a una seccion*/
+homeButton.addEventListener("click", () => {
+  portfolio.scrollIntoView({ behavior: "smooth" });
+});
+
+aboutmeButton.addEventListener("click", () => {
+  contact.scrollIntoView({ behavior: "smooth" });
+});
 
 /**muestra u oculta botones */
 const clickHandler = () => {
@@ -35,5 +49,5 @@ function mostrarOcultarBoton() {
 //Ejecuta la función cuando termina de cargar la página
 window.onload = mostrarOcultarBoton;
 
-//Registra la funcion como un controlador del evento resize se ejecuta 
+//Registra la funcion como un controlador del evento resize se ejecuta
 window.addEventListener("resize", mostrarOcultarBoton);

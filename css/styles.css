@@ -36,13 +36,13 @@ li {
   --lightBlueViolet: #4b5cbf;
 
   /*Font sizes*/
-  --titulo1: 36px;
-  --titulo2: 28px;
-  --titulo3: 20px;
-  --titulo4: 16px;
-  --normal: 16px;
-  --small: 14px;
-  --smaller: 12px;
+  --titulo1: 3.6rem;
+  --titulo2: 2.8rem;
+  --titulo3: 2rem;
+  --titulo4: 1.6rem;
+  --normal: 1.6rem;
+  --small: 1.4rem;
+  --smaller: 1.2rem;
 }
 
 /*########################################################*/
@@ -183,7 +183,7 @@ body {
   width: 100vw;
   height: 400px;
   display: grid;
-  grid-template-columns: 1fr minmax(100px, 500px) 2fr;
+  grid-template-columns: 1fr minmax(100px, 650px) 3fr;
   grid-template-rows: 5rem auto auto auto 5rem;
   grid-template-areas:
     ". . ."
@@ -240,7 +240,7 @@ body {
 }
 
 .aboutme__photo-container {
-  width: 70%;
+  max-width: 350px;
   height: 450px;
   margin-left: auto;
   margin-right: auto;
@@ -385,8 +385,9 @@ body {
 }
 
 .skills__container {
-  margin-right: 10vw;
-  margin-left: 10vw;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -494,24 +495,32 @@ body {
   position: relative;
 }
 
-.footer__line {
-  width: 80vw;
-  border-top: 1px solid var(--whitegray);
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 3.2rem;
-  position: absolute;
-  top: -14px;
-  left: 39px;
-}
-
 .footer__container {
   width: 100%;
   height: 80px;
+  display: grid;
+  grid-template-columns: auto 1fr 100px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ' line line line'
+    'info info info';
+  justify-items: center;
+  align-items: center;
+}
+
+.footer__line {
+  width: 80vw;
+  border-top: 1px solid var(--whitegray);
+  grid-area: line;
+}
+
+.footer__info-container{
+  grid-area: info;
   display: flex;
+  width: 80vw;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10vw;
 }
 
 .footer__info {
@@ -521,6 +530,8 @@ body {
 }
 
 .footer__socialMedia {
+  display: flex;
+  gap: 1.6rem;
 }
 
 .footer__socialMedia-link {
@@ -557,6 +568,40 @@ body {
   .header__link {
     font-size: var(--titulo4);
     font-weight: 300;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutme__container {
+    height: auto;
+    display: flex;
+    gap: 1.6rem;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutme__photo-container {
+    width: 350px;
+    height: auto;
+  }
+
+  .aboutme__presentation-container {
+    width: 70%;
+  }
+
+  .portolio__proyect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skills__container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
   }
 }
 

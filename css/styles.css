@@ -294,6 +294,8 @@ body {
   height: 5rem;
   line-height: 1.6;
   padding: 0 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .aboutme__button {

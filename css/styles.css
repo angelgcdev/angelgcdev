@@ -287,10 +287,21 @@ body {
   letter-spacing: 0.5px;
 }
 
+.aboutme__button-CV {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 5rem;
+  line-height: 1.6;
+  padding: 0 1.6rem;
+}
+
 .aboutme__button {
   width: auto;
   height: 5rem;
   padding: 0 1.6rem;
+  background-color: transparent;
+  border: 1px solid var(--white);
 }
 
 /*Styles porfolio*/
@@ -349,6 +360,14 @@ body {
   color: var(--white);
 }
 
+.proyect__link:hover {
+  color: var(--sky);
+}
+
+.proyect__link:active {
+  color: var(--lightBlueViolet);
+}
+
 .proyect__image-container {
   width: 70%;
   height: 300px;
@@ -398,7 +417,6 @@ body {
 
 .skill__image-container {
   width: 100px;
-  background-color: rgba(255, 255, 255, 0.144);
   border-radius: 5px;
 }
 
@@ -503,8 +521,8 @@ body {
   grid-template-columns: auto 1fr 100px;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    ' line line line'
-    'info info info';
+    " line line line"
+    "info info info";
   justify-items: center;
   align-items: center;
 }
@@ -515,7 +533,7 @@ body {
   grid-area: line;
 }
 
-.footer__info-container{
+.footer__info-container {
   grid-area: info;
   display: flex;
   width: 80vw;

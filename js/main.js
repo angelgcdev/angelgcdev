@@ -1,6 +1,7 @@
 const botonMenu = document.querySelector(".botonMenu");
 const homeButton = document.querySelector(".home__button");
 const aboutmeButton = document.querySelector(".aboutme__button");
+const aboutmeButtonCV = document.querySelector(".aboutme__button-cv");
 
 const headerNav = document.querySelector(".header__nav");
 const navbarButtons = document.querySelectorAll(".header__link");
@@ -16,6 +17,8 @@ aboutmeButton.addEventListener("click", () => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
 
+
+/*########################################### */
 /**muestra u oculta botones */
 const clickHandler = () => {
   headerNav.classList.toggle("inactive");
